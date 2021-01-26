@@ -1,7 +1,7 @@
 import {CriminalList} from "./criminals/CriminalList.js"
 import {OfficerList} from "./officers/OfficerList.js"
 import {FacilityList} from "./facilities/FacilitiesList.js"
-
+import {WitnessStatementList} from "./witness-statements/WitnessStatementList.js"
 
 
 
@@ -19,4 +19,6 @@ darkModeButton.addEventListener("click", function(){
     // Add a class
     bodyElement.classList.toggle("dark-background")
   })
+
+  
 
