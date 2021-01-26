@@ -1,35 +1,57 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <title>Glassdale PD</title>
         <link rel="stylesheet" href="./styles/main.css">
     </head>
 
     <body>
+        
+        <!--Nav Bar Component -->
+        <nav class="navbar">
+            <ul>
+            <li>
+                <a id="criminals-nav-link" href="#">Criminals</a>
+            </li>
+            <li>
+                <a id="officers-nav-link" href="#">Officers</a>
+            </li>
+            <li>
+                <a id="facilities-nav-link" href="#">Facilities</a>
+            </li>
+            <li>
+                <a id="notes-nav-link" href="#">Notes</a>
+            </li>
+            </ul>
+
+            <button id="dark-mode">Dark Mode</button>
+        </nav>
+
         <section class="criminals">
-            <h2>Criminals</h2>
             <div class="convictions-select-container"></div>
-            <div class="criminal-list flex-container">
+            <div class="criminal-list row">
 
             </div>
         </section>
 
         <section class="officers">
-            <h2>Officers</h2>
-            <div class="officer-list flex-container">
+            <div class="officer-list row">
 
             </div>
         </section>
 
         <section class="facilities">
-            <h2>Facilities</h2>
-            <div class="facility-list flex-container">
+            <div class="facility-list row">
                 
             </div>
         </section>
+        
 
         <script type="module" src="./scripts/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
 </html>

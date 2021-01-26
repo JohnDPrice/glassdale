@@ -12,6 +12,10 @@ export const OfficerList = () => {
             officerListHTMLString += Officer(currentOfficerInLoop)
         }
         
-        officerContainer.innerHTML = `${officerListHTMLString}`
+        officerContainer.innerHTML = `<h2>Officers</h2>${officerListHTMLString}`
     })
 }
+
+document.querySelector("#officers-nav-link").addEventListener("click", () => {
+    return OfficerList()
+})

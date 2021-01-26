@@ -12,6 +12,10 @@ export const CriminalList = () => {
             criminalListHTMLString += Criminal(currentCriminalInLoop)
         }
         
-        criminalContainer.innerHTML = `${criminalListHTMLString}`
+        criminalContainer.innerHTML = `<h2>Criminals</h2>${criminalListHTMLString}`
     })
 }
+
+document.querySelector("#criminals-nav-link").addEventListener("click", () => {
+    return CriminalList()
+})

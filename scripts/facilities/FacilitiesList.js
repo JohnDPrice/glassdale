@@ -12,6 +12,10 @@ export const FacilityList = () => {
             facilityListHTMLString += Facility(currentFacilityInLoop)
         }
         
-        facilityContainer.innerHTML = `${facilityListHTMLString}`
+        facilityContainer.innerHTML = `<h2>facilities</h2>${facilityListHTMLString}`
     })
 }
+
+document.querySelector("#facilities-nav-link").addEventListener("click", () => {
+    return FacilityList()
+})
