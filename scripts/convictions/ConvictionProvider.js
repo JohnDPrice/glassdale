@@ -10,9 +10,7 @@ let convictions = []
         // Convert the JSON string reposne to a Javascript data structure (object or array)
         .then(response => response.json())
         // Do something with the data
-        .then(
-            parsedConvictions => {
-                console.table(parsedConvictions)
+        .then((parsedConvictions) => {
                 convictions = parsedConvictions
             }
         )
