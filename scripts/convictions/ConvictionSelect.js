@@ -17,11 +17,7 @@ export const ConvictionSelect = () => {
 }
 
 const render = (convictionsCollection) => {
-    /*
-        Use interpolation here to invoke the map() method on
-        the convictionsCollection to generate the option elements.
-        Look back at the example provided above.
-    */
+
     contentTarget.innerHTML = `
         <select class="dropdown" id="crimeSelect">
             <option value="0">Please select a crime...</option>
