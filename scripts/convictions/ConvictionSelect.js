@@ -3,7 +3,7 @@
  *   which lists all convictions in the Glassdale PD API
  */
 import { useConvictions, getConvictions } from "./ConvictionProvider.js"
-import {CriminalList} from "/scripts/criminals/CriminalList.js"
+import {CriminalList} from "../criminals/CriminalList.js"
 
 // Get a reference to the DOM element where the <select> will be rendered
 const contentTarget = document.querySelector(".filters__crime")

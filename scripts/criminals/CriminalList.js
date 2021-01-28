@@ -3,15 +3,21 @@ import {Criminal} from "./Criminal.js"
 
 let criminalContainer = document.querySelector(".criminal-list")
 
-export const CriminalList = (convictionSelected) => {
+export const CriminalList = (optionSelected) => {
     getCriminals().then(() => {
         let criminalsToPrint = useCriminals();
 
         // If we get input from the convicitons filter, filter our criminals so that we only see ones with the conviction
-        if(convictionSelected){
-            criminalsToPrint = criminalsToPrint.filter(currentCriminalInLoop => {
-                return currentCriminalInLoop.conviction === convictionSelected
-            })
+        for(const selection of criminalsToPrint) {
+            if(optionSelected === selection.conviction){
+                criminalsToPrint = criminalsToPrint.filter(currentCriminalInLoop => {
+                    return currentCriminalInLoop.conviction === optionSelected
+                })
+            } else if(optionSelected === selection.arrestingOfficer){
+                criminalsToPrint = criminalsToPrint.filter(currentCriminalInLoop => {
+                    return currentCriminalInLoop.arrestingOfficer === optionSelected
+                })
+            }
         }
         
         let criminalListHTMLString = ""

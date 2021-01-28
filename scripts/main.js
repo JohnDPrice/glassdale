@@ -3,7 +3,7 @@ import {OfficerList} from "./officers/OfficerList.js"
 import {FacilityList} from "./facilities/FacilitiesList.js"
 import {WitnessStatementList} from "./witness-statements/WitnessStatementList.js"
 import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
-
+import {OfficerSelect} from "./officers/OfficerSelect.js"
 
 const darkModeButton = document.querySelector("#dark-mode")
 
@@ -21,4 +21,6 @@ darkModeButton.addEventListener("click", function(){
   })
 
   ConvictionSelect()
+  OfficerSelect()
+ 
 

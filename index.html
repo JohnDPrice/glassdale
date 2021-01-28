@@ -12,35 +12,48 @@
     <body>
         
         <!--Nav Bar Component -->
-        <nav class="navbar">
-            <ul>
-            <li>
-                <a id="criminals-nav-link" href="#">Criminals</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-brand" id="dark-mode">Dark Mode</button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" id="criminals-nav-link" href="#">Criminals</a>
             </li>
-            <li>
-                <a id="officers-nav-link" href="#">Officers</a>
+            <li class="nav-item">
+                <a class="nav-link" id="officers-nav-link" href="#">Officers</a>
             </li>
-            <li>
-                <a id="facilities-nav-link" href="#">Facilities</a>
+            <li class="nav-item">
+                <a class="nav-link" id="facilities-nav-link" href="#">Facilities</a>
             </li>
-            <li>
-                <a id="notes-nav-link" href="#">Notes</a>
+            <li class="nav-item">
+                <a class="nav-link" id="notes-nav-link" href="#">Notes</a>
             </li>
-            <li>
-                <a id="witness-statements-nav-link" href="#">Witness Statements</a>
+            <li class="nav-item">
+                <a class="nav-link" id="witness-statements-nav-link" href="#">Witness Statements</a>
             </li>
             </ul>
-
-            <button id="dark-mode">Dark Mode</button>
+            </div>
         </nav>
+
+        <section class="dropdown-container row">
+            <div class="filters__crime col-sm-4">
+                    
+            </div>
+            <div class="filters__officers col-sm-4">
+                    
+            </div>
+        </section>
 
         <section class="criminals">
             <div class="convictions-select-container"></div>
-            <div class="filters__crime">
-                    
-            </div>
+    
             <div class="criminal-list row">
-
+                <aside class="associate-alibis-list">
+                
+                </aside>
             </div>
         </section>
 
@@ -62,7 +75,7 @@
             </div>
         </section>
         
-
+        
         <script type="module" src="./scripts/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
