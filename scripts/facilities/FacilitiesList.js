@@ -12,7 +12,7 @@ export const FacilityList = () => {
             facilityListHTMLString += Facility(currentFacilityInLoop)
         }
         
-        facilityContainer.innerHTML = `<h2>facilities</h2>${facilityListHTMLString}`
+        facilityContainer.innerHTML = `<h2>Facilities</h2>${facilityListHTMLString}`
     })
 }
 

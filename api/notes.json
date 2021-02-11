@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "text": "Test Note",
+      "date": "2021-02-10",
+      "criminalByID": "11",
+      "id": 1
+    },
+    {
+      "text": "Note note note ",
+      "date": "2021-02-11",
+      "criminalByID": "6",
+      "id": 2
+    },
+    {
+      "text": "Note note note",
+      "date": "2020-07-22",
+      "criminalByID": "12",
+      "id": 3
+    },
+    {
+      "text": "Test note test note test note",
+      "date": "2021-02-09",
+      "criminalByID": "7",
+      "id": 4
+    }
+  ]
+}

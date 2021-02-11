@@ -1,0 +1,24 @@
+Notes.js
+
+    - Renders the HTML foreach individual note.
+    - Imports into NoteList.js
+
+
+NoteDataProvider.js
+    - Fetches data from notes.json local API
+    - Adds event listener to the Save Note button to push a new note object into the notes.json API
+
+    
+NoteList.js
+    - Imports Notes.js 
+    - Prints the entire list of notes to the DOM
+
+
+NoteForm.js
+
+    - Builds the form for input to be given to create a new note object
+
+
+ShowNotesButton
+
+    - Builds a button that prints to the DOM with an event listener to listen for a click to open up the list of notes from NoteList.js

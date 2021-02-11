@@ -2,8 +2,10 @@ import {CriminalList} from "./criminals/CriminalList.js"
 import {OfficerList} from "./officers/OfficerList.js"
 import {FacilityList} from "./facilities/FacilitiesList.js"
 import {WitnessStatementList} from "./witness-statements/WitnessStatementList.js"
-import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
 import {OfficerSelect} from "./officers/OfficerSelect.js"
+import {AssociateList} from "./associates/AssociatesList.js"
+import {NoteForm} from "./notes/NoteForm.js"
+import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
 
 const darkModeButton = document.querySelector("#dark-mode")
 
@@ -22,5 +24,5 @@ darkModeButton.addEventListener("click", function(){
 
   ConvictionSelect()
   OfficerSelect()
- 
-
+  AssociateList()
+  NoteForm()

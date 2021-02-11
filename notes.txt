@@ -1,0 +1,32 @@
+1. See the button show up for each criminal
+<button id="associates--${criminalObject.id}">Known Associates</button>
+
+2. Figure out what criminal.id is on the button -- ask questions
+    -- id is a key in the object of the criminals array. Each criminal has a uniqe ID
+
+3. Look at criminal object in the console or in postman or in browser to see how to get the known_associates property
+    -- known__associates is a key in the array of criminals that contains an array of objects that has keys of name and alibi
+
+4. What differentiates each object?
+    --The uniqe ID
+
+5. Make an associate folder in scripts
+    - AssociateList component
+    - EventListener in AssociateList
+    - The EventListener should listen for a click on the button and then display the 
+    - AssociateList should filter throught the criminals array and give us only the known__associates for the criminal that was selected with the button
+
+6. Write an event listener to listen for each button click -- it should console log that we clicked a button but it shouldn't do anything else at this point
+    -- The event listener should be on the body or main element 
+
+7. The Tricky Part: When you click a single criminal's known associate's button you need to get THAT criminal's object in the console 
+    -- Filter the criminals to find the specific criminal
+
+8. Once we get that criminal back, console.log the known associates array for the criminal you clicked on 
+
+9. Once you can get the known associates in the console, we know we have access to them and we can work on printing them in a loop in AssociateList
+
+10. Decide where to print our associates and add a container to our HTML file
+
+
+The button is rendered in the Criminal.js file. Each button has a unique ID that identitifies which criminal it is associated with. AssociateList.js must iterate the array of criminals and filter out the criminal ID that matches the ID to the button that was clicked. If the current ID in the loop matches the ID clicked on the button the return the new array containing the alibi name and statement

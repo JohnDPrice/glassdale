@@ -2,10 +2,7 @@
 
 /*Typography
 --------------------------------------------------------------*/
-* {
-	padding-left: 1vw;
-	padding-right: 1vw;
-}
+
 
 body,
 button,
@@ -13,14 +10,14 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
-  letter-spacing: 2px;
+	font-family: 'Roboto', sans-serif;
+  	letter-spacing: 2px;
 }
 
 /* .flex-container {
@@ -34,23 +31,61 @@ h1,h2,h3,h4,h5,h6 {
 	padding: .5vw;
 	margin-bottom: 1em;
 }
-/* .officer-card {
-	border: 1px dotted black;
-	width: 35vw;
-	padding: 1vw;
-	margin-bottom: 1em;
-} */
-
-/* .facility-card {
-	border: 1px dotted black;
-	width: 35vw;
-	padding: 1vw;
-	margin-bottom: 1em;
-} */
 
 .dark-background{
 	background-color: #2b362e;
 	color: #fafcfb;
+  }
+
+  .dropdown-container {
+	  display: flex;
+	  justify-content: center;
+	  margin-top: 3vh;
+  }
+
+  .known-associate {
+	  display: flex;
+	  color: white;
+	  padding-top: 2vh;
+  }
+
+  .alibis {
+	  background-color: grey;
+	  width: 50vw;
+	  margin-top: 5vh;
+	  margin-bottom: 3vh;
+  }
+
+  .facility-list {
+	margin-top: 15vh;
+  }
+
+  .noteFormContainer {
+	  display: flex;
+	  justify-content: center;
+  }
+
+  .noteListButton {
+	display: flex;
+	justify-content: center;
+  }
+
+  .note-form-buttons {
+	  padding: 0px;
+	  margin: 0px;
+	  margin-top: 2vh;
+  }
+
+  section.criminals {
+	  display: flex;
+	  justify-content: center;
+  }
+
+  .note-list {
+	  display: flex;
+	  flex-wrap: wrap;
+	  margin: 10vh;
+	  
   }
 
 

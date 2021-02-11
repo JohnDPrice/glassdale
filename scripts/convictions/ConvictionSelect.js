@@ -20,7 +20,7 @@ const render = (convictionsCollection) => {
 
     contentTarget.innerHTML = `
         <select class="dropdown" id="crimeSelect">
-            <option value="0">Please select a crime...</option>
+            <option value="0">Please select a crime</option>
             ${
                 convictionsCollection.map((currentConvictionInLoop) => {
                     const crimeName = currentConvictionInLoop.name
@@ -36,8 +36,8 @@ eventHub.addEventListener("change", (eventObject) => {
     
 
     if(eventObject.target.id === "crimeSelect"){
+        console.log("You selected something from the crime dropdown")
         console.log("This is the crime that was selected: ", eventObject.target.value)
-
         CriminalList(eventObject.target.value)
     }
 })
