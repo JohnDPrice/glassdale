@@ -19,9 +19,10 @@ alibiEventHub.addEventListener("click", (idObject) => {
 
         for (let i = 0; i < matchingCriminals.known_associates.length; i++) {
             document.querySelector(".associate-alibis-list").innerHTML += `
-            <div class="known-associate col-md-6">
-                <p>Name: ${matchingCriminals.known_associates[i].name}</p>
-                <p>Alibi: ${matchingCriminals.known_associates[i].alibi}</p>
+            <div class="known-associate col-md-12 card">
+                <h4 class="card-title">Known Associate</h4>
+                <p class="card-text">Name: ${matchingCriminals.known_associates[i].name}</p>
+                <p class="card-text">Alibi: ${matchingCriminals.known_associates[i].alibi}</p>
             </div>`
         } 
     }

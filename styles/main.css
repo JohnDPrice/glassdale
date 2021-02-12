@@ -41,19 +41,23 @@ h1,h2,h3,h4,h5,h6 {
 	  display: flex;
 	  justify-content: center;
 	  margin-top: 3vh;
+	  margin-bottom: 3vh;
   }
 
   .known-associate {
 	  display: flex;
-	  color: white;
-	  padding-top: 2vh;
+	  justify-content: center;
+	  padding: 3vh;
+  }
+
+  .associate-alibis-list {
+	  padding: 0;
+	  margin: 0;
   }
 
   .alibis {
-	  background-color: grey;
-	  width: 50vw;
-	  margin-top: 5vh;
-	  margin-bottom: 3vh;
+	  display: flex;
+	  justify-content: center;
   }
 
   .facility-list {
@@ -63,6 +67,7 @@ h1,h2,h3,h4,h5,h6 {
   .noteFormContainer {
 	  display: flex;
 	  justify-content: center;
+	  margin: 3vh;
   }
 
   .noteListButton {
@@ -81,15 +86,20 @@ h1,h2,h3,h4,h5,h6 {
 	  justify-content: center;
   }
 
+.criminal-list {
+	margin: 2vh;
+}
+
   .note-list {
 	  display: flex;
+	  justify-content: center;
 	  flex-wrap: wrap;
-	  margin: 10vh;
-	  
   }
 
-
-
+.note-list-heading {
+	display: flex;
+	justify-content: center;
+}
 
 
 

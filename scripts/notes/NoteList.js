@@ -1,4 +1,4 @@
-import { getNotes, useNotes } from "./NoteDataProvider.js";
+import { getNotes, useNotes, deleteNote } from "./NoteDataProvider.js";
 import { getCriminals, useCriminals } from "../criminals/CriminalProvider.js"
 import { Note } from "./Note.js";
 
@@ -33,8 +33,18 @@ export function NoteList() {
 
             const stringOfAllRepresentations = arrayOfNotesHTMLRepresentations.join("")
 
-            contentTarget.innerHTML = `<h2>Notes</h2>${stringOfAllRepresentations}`
+            contentTarget.innerHTML = `<h2 class="note-list-heading">Notes</h2>${stringOfAllRepresentations}`
 
             })
         })
 }
+
+eventHub.addEventListener("click", (eventObject) => {
+  if (eventObject.target.id.startsWith("deleteNote")) {
+    const idToDelete = eventObject.target.id.split("-")[2]
+    console.log(idToDelete)
+    deleteNote(idToDelete)
+    NoteList()
+  }
+});
+
