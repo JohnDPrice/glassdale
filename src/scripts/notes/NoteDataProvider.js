@@ -6,7 +6,7 @@ export const useNotes = () => {
 
 // Fetches Notes Array from local API
 export const getNotes = () => {
-    return fetch('http://localhost:7077/notes')
+    return fetch('http://localhost:8088/notes')
         .then(response => response.json())
         .then(parsedNotes => {
             notes = parsedNotes
@@ -15,7 +15,7 @@ export const getNotes = () => {
 
 // Adds new note to Notes Array on local API 
 export const saveNote = note => {
-    return fetch('http://localhost:7077/notes', {
+    return fetch('http://localhost:8088/notes', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -27,7 +27,7 @@ export const saveNote = note => {
 }
 
 export const deleteNote = noteId => {
-    return fetch(`http://localhost:7077/notes/${noteId}`, {
+    return fetch(`http://localhost:8088/notes/${noteId}`, {
         method: "DELETE"
     })
 }
